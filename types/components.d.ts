@@ -8,9 +8,6 @@ import type { FC, PropsWithChildren } from 'react'
  */
 
 type CustomLinkProps = LinkProps &
-  HTMLProps<HTMLAnchorElement> & {
-    ariaLabel: string
-    notification?: boolean
-  }
+  HTMLProps<HTMLAnchorElement>
 
 export type NavigationProps = FC<PropsWithChildren<CustomLinkProps>>

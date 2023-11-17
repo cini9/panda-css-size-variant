@@ -21,7 +21,7 @@ const Navbar = () => {
     py: 2,
   }
   return (
-    <Flex w='full' h={24} justifyContent={'space-between'}>
+    <Flex w='full' h={24} justifyContent='space-between'>
       <Box height={20} w={20} m={3} position='relative'>
         <Image
           src={Logo}
@@ -33,16 +33,16 @@ const Navbar = () => {
       </Box>
       <HStack alignContent={'center'} gap={4} mr={4}>
         <Link
-          href={`/`}
-          ariaLabel={'TODO'}
+          href='/'
+          ariaLabel='TODO'
           variant='navbar'
           className={css(linkStyle)}
         >
           Accueil
         </Link>
         <Link
-          href={`/`}
-          ariaLabel={'TODO'}
+          href='/'
+          ariaLabel='TODO'
           variant='navbar'
           className={css(linkStyle)}
         >
