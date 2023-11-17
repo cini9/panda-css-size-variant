@@ -1,4 +1,15 @@
+/**
+ * The external imports
+ */
 import { defineConfig } from '@pandacss/dev'
+
+/**
+ * The internal imports
+ */
+import { semanticTokens } from './theme/sementicTokens'
+import { textStyles } from './theme/textStyles'
+import { tokens } from './theme/tokens'
+import { globalCss } from './theme/globalCss'
 
 export default defineConfig({
   // Whether to use css reset
@@ -12,8 +23,14 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {},
+    extend: {
+      semanticTokens,
+      textStyles,
+      tokens,
+    },
   },
+
+  globalCss,
 
   jsxFramework: 'react',
 
