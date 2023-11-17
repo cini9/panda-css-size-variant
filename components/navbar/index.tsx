@@ -1,7 +1,6 @@
 /**
  * The external imports
  */
-import { memo } from 'react'
 import Image from 'next/image'
 
 /**
@@ -53,4 +52,4 @@ const Navbar = () => {
   )
 }
 
-export default memo(Navbar)
+export default Navbar
