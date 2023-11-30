@@ -23,11 +23,9 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {
-      semanticTokens,
-      textStyles,
-      tokens,
-    },
+    semanticTokens,
+    textStyles,
+    tokens,
   },
 
   globalCss,
