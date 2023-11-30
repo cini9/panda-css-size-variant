@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang='en' className={`${ppNeueMontreal.variable}`}>
+    <html lang='en' className={ppNeueMontreal.variable}>
       <body>{children}</body>
     </html>
   )
