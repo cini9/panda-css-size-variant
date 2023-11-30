@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "studio": "panda studio"
+    "studio": "panda studio --port 3001"
   },
   "dependencies": {
     "next": "14.0.2",

@@ -14,11 +14,10 @@ export default function Home() {
       className={css({
         fontSize: '2xl',
         fontWeight: 'bold',
-        backgroundColor: 'sinan',
+        backgroundColor: 'primary',
       })}
     >
       <Navbar />
-      Hello 🐼!
     </div>
   )
 }
