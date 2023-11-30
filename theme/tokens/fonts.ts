@@ -1,3 +1,6 @@
+/**
+ * The external imports
+ */
 import localFont from 'next/font/local'
 
 export const ppNeueMontreal = localFont({
