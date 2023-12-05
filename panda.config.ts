@@ -9,6 +9,7 @@ import { defineConfig } from '@pandacss/dev'
 import { semanticTokens } from './theme/sementicTokens'
 import { textStyles } from './theme/textStyles'
 import { tokens } from './theme/tokens'
+import { recipes } from './theme/recipes'
 import { globalCss } from './theme/globalCss'
 
 export default defineConfig({
@@ -26,6 +27,9 @@ export default defineConfig({
     semanticTokens,
     textStyles,
     tokens,
+    extend: {
+      recipes,
+    },
   },
 
   globalCss,

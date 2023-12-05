@@ -7,17 +7,17 @@ export const textStyles = defineTextStyles({
   h1: {
     value: {
       fontSize: '3xl',
-      fontStyle: 'semibold',
+      fontStyle: 'bold',
       letterSpacing: 'normal',
     },
   },
   h2: {
-    value: { fontSize: '2xl', fontWeight: 'semibold', letterSpacing: 'widest' },
+    value: { fontSize: '2xl', fontWeight: 'bold', letterSpacing: 'widest' },
   },
   h3: {
     value: {
       fontSize: 'xl',
-      fontWeight: 'semibold',
+      fontWeight: 'bold',
       letterSpacing: 'extraWide',
     },
   },

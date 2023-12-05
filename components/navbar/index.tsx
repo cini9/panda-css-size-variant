@@ -10,6 +10,7 @@ import Link from '@/components/ui/link'
 import Logo from '@/public/wm-logo.png'
 import { css } from '@/styled-system/css'
 import { Flex, Box, HStack } from '@/styled-system/jsx'
+import { Button } from '../ui/button'
 
 const Navbar = () => {
   const linkStyle = {
@@ -47,6 +48,7 @@ const Navbar = () => {
         >
           Accueil
         </Link>
+        <Button variant='solid'>Accueil</Button>
       </HStack>
     </Flex>
   )
