@@ -20,12 +20,14 @@ export default function Home() {
             Accueil
           </Button>
         </HStack>
+
         <HStack>
           <Text textStyle='2xsBookNormal'>Navbar Active</Text>
           <Button variant='navbarActive' size='sm'>
             Accueil
           </Button>
         </HStack>
+
         <HStack>
           <Text textStyle='2xsBookNormal'>Icon Button Uppercase</Text>
           <IconButton
@@ -36,6 +38,7 @@ export default function Home() {
             Parlons-en
           </IconButton>
         </HStack>
+
         <HStack>
           <Text textStyle='2xsBookNormal'>Icon Button Normal</Text>
           <IconButton
@@ -63,6 +66,7 @@ export default function Home() {
             En savoir plus
           </IconButton>
         </HStack>
+
         <HStack bg='lightgrey' p={10}>
           <Text textStyle='2xsBookNormal'>Icon Button White</Text>
           <IconButton
