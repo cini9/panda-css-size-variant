@@ -13,7 +13,6 @@ export const button = defineRecipe({
       ghost: {},
       link: {},
       navbar: {
-        textStyle: 'xsMediumNormal',
         bg: 'white',
         px: 4,
         py: 1,
@@ -44,22 +43,19 @@ export const button = defineRecipe({
         },
       },
       navbarActive: {
-        textStyle: 'xsMediumNormal',
-        bg: 'primary',
         cursor: 'default',
         px: 4,
         py: 1,
+        bg: 'primary',
         color: 'white',
       },
       iconButton: {
-        textStyle: 'xsMediumNormal',
         px: 4,
         py: 1,
         bg: 'primary',
         color: 'white',
       },
       iconButtonWhite: {
-        textStyle: 'xsMediumNormal',
         px: 4,
         py: 1,
         bg: 'white',
@@ -67,12 +63,53 @@ export const button = defineRecipe({
       },
     },
     size: {
-      xs: {},
-      sm: {},
-      md: {},
-      lg: {},
-      xl: {},
-      '2xl': {},
+      sm: {
+        px: 4,
+        py: 1,
+        textStyle: 'xsMediumNormal',
+      },
+      md: {
+        px: 12,
+        py: 6,
+        textStyle: 'lgMediumNormal',
+      },
+      lg: {
+        px: 12,
+        py: 6,
+        textStyle: 'xlMediumNormal',
+        textTransform: 'uppercase',
+      },
     },
   },
+  // compoundVariants: [
+  //   {
+  //     size: 'sm',
+  //     variant: 'iconButton',
+  //     css: {
+  //       textStyle: 'xsMediumNormal',
+  //       px: 4,
+  //       py: 1,
+  //     },
+  //   },
+  //   {
+  //     size: 'md',
+  //     variant: 'iconButton',
+  //     css: {
+  //       textStyle: 'lgMediumNormal',
+  //       px: 12,
+  //       py: 6,
+  //     },
+  //   },
+  //   {
+  //     size: 'lg',
+  //     variant: 'iconButton',
+  //     css: {
+  //       textStyle: 'xlMediumNormal',
+  //       px: 12,
+  //       py: 6,
+  //       textTransform: 'uppercase',
+  //     },
+  //   },
+  // ],
+  jsx: ['Button', 'IconButton'],
 })

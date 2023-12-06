@@ -16,17 +16,21 @@ export default function Home() {
       <VStack py={10} px={10}>
         <HStack>
           <Text textStyle='2xsBookNormal'>Navbar</Text>
-          <Button variant='navbar'>Accueil</Button>
+          <Button variant='navbar' size='sm'>
+            Accueil
+          </Button>
         </HStack>
         <HStack>
           <Text textStyle='2xsBookNormal'>Navbar Active</Text>
-          <Button variant='navbarActive'>Accueil</Button>
+          <Button variant='navbarActive' size='sm'>
+            Accueil
+          </Button>
         </HStack>
         <HStack>
           <Text textStyle='2xsBookNormal'>Icon Button Uppercase</Text>
           <IconButton
             aria-label='iconButton'
-            className={css({ textTransform: 'uppercase' })}
+            additionalStyle={css({ textTransform: 'uppercase' })}
             icon={<ArrowUpRight />}
           >
             Parlons-en
@@ -39,12 +43,7 @@ export default function Home() {
             icon={<ArrowUpRight size='64px' />}
             hasCircle
             gap={9}
-            className={css({
-              py: 6,
-              px: 12,
-              textTransform: 'uppercase',
-              textStyle: 'xlMediumNormal',
-            })}
+            size='lg'
           >
             Parlons-en
           </IconButton>
@@ -53,11 +52,7 @@ export default function Home() {
             icon={<ArrowUpLeft size='56px' />}
             rtl
             gap={6}
-            className={css({
-              py: 6,
-              px: 12,
-              textStyle: 'lgMediumNormal',
-            })}
+            size='md'
           >
             Projet précédent
           </IconButton>
@@ -70,7 +65,11 @@ export default function Home() {
         </HStack>
         <HStack bg='lightgrey' p={10}>
           <Text textStyle='2xsBookNormal'>Icon Button White</Text>
-          <IconButton aria-label='iconButton' icon={<ArrowRight />}>
+          <IconButton
+            aria-label='iconButton'
+            variant='iconButtonWhite'
+            icon={<ArrowRight />}
+          >
             Voir tous les projets
           </IconButton>
         </HStack>

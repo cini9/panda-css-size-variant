@@ -2,7 +2,6 @@
  * The external imports
  */
 import { ComponentPropsWithoutRef, FC, ReactElement } from 'react'
-import { ark } from '@ark-ui/react'
 
 /**
  * The internal imports
@@ -10,7 +9,7 @@ import { ark } from '@ark-ui/react'
 import { Box, HStack, styled } from '@/styled-system/jsx'
 import { type ButtonVariantProps, button } from '@/styled-system/recipes'
 
-export const Button = styled(ark.button, button)
+export const Button = styled('button', button)
 export type ButtonProps = typeof Button
 
 type IconButtonProps = ButtonVariantProps &
@@ -20,19 +19,21 @@ type IconButtonProps = ButtonVariantProps &
     hasCircle?: boolean
     rtl?: boolean
     gap?: number
+    additionalStyle?: any
   }
 
-// TODO : White button
 export const IconButton: FC<IconButtonProps> = ({
   icon,
   children,
   gap = 3,
   hasCircle = false,
   rtl = false,
+  variant = 'iconButton',
+  size = 'sm',
   ...rest
 }) => {
   return (
-    <Button variant='iconButton' {...rest}>
+    <Button {...rest} size={size} variant={variant}>
       <HStack gap={gap} direction={rtl ? 'rtl' : 'ltr'}>
         {children}
         <Box
